@@ -8,6 +8,7 @@ def int_check(question):
         error = "please enter a number that is 1 or more."
         to_check = input(question)
 
+
         try:
             response = int(to_check)
             if response < 1:
@@ -27,6 +28,8 @@ def yes_no(question):
             return "yes"
         elif response == "no" or response == "n":
             return "no"
+        elif response == "xxx":
+            exit()
         else:
             print("please enter yes / no")
 
